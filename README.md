@@ -16,11 +16,12 @@ Acceder desde el navegador http://localhost:4200
 ## INSTALACION BASE DE DATOS
 
 Gestor BD: MySQL(8+)
+Nota: Es requerido que exista la conexión para el funcionamiento del proyecto.
 
-Usuario: root 
-Contraseña: 12345
-Puerto : 3306
-Host : 127.0.0.1
+- Usuario: root 
+- Contraseña: 12345
+- Puerto : 3306
+- Host : 127.0.0.1
 
 
 ## INSTALACION - BACKEND
