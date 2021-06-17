@@ -13,10 +13,7 @@ var app = express();
 //LISTENING ON SERVER
 var server = http.createServer(app);
 
-/**
- * Listen on provided port, on all network interfaces.
- */
-console.log(port);
+
 
 server.listen(port);
 server.on('error', onError);
