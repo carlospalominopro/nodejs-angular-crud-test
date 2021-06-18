@@ -1,0 +1,8 @@
+
+<app-main-content *ngIf="!(currentUser | async)"></app-main-content>
+
+
+<div id="home" *ngIf="(currentUser | async)">
+    <app-sidenav></app-sidenav>
+    <app-main-content></app-main-content>
+</div>

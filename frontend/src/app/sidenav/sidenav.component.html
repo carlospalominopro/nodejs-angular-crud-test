@@ -1,0 +1,13 @@
+<div id="sidebar" *ngIf="(currentUser | async)">
+    <mat-nav-list role="list">
+        
+        <a *ngIf="(currentUser | async)?.Role?.id == 2" mat-list-item role="listitem" routerLink="/" routerLinkActive="active">
+            <mat-icon matListIcon>article</mat-icon>&nbsp; Noticias &nbsp; <small>(API)</small>
+        </a>
+
+        <a *ngIf="(currentUser | async)?.Role?.id == 1" mat-list-item role="listitem" routerLink="/users" routerLinkActive="active">
+            <mat-icon matListIcon>people</mat-icon> &nbsp; Usuarios
+        </a>
+
+    </mat-nav-list>
+</div>

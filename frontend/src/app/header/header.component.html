@@ -1,0 +1,14 @@
+<mat-toolbar color="primary">
+
+    <span *ngIf="(currentUser | async)">{{ (currentUser | async)?.firstName + ' ' + (currentUser | async)?.lastName  }}</span>
+    
+    <span class="example-spacer"></span>
+
+    <button mat-button class="example-icon" aria-label="Logout" title="Cerrar sesión" (click)="logout()" *ngIf="(currentUser | async)">
+        <mat-icon>logout</mat-icon> Cerrar sesión
+    </button>
+    <button mat-button class="example-icon" aria-label="Logout" title="Iniciar sesión" routerLink="/login" *ngIf="!(currentUser | async)">
+        <mat-icon>login</mat-icon> Iniciar sesión
+    </button>
+
+</mat-toolbar>

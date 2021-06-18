@@ -1,0 +1,31 @@
+<div class="main-wrapper pt-5 mt-5" fxLayoutAlign="center">
+
+    <mat-card class="box">
+
+        <mat-card-header>
+            <mat-card-title>Bienvenid@</mat-card-title>
+            <mat-card-subtitle><p class="pt-5">Por favor ingrese datos para continuar</p></mat-card-subtitle>
+        </mat-card-header>
+
+
+       <div class="row" *ngIf="loading">
+           <div class="col-12 d-flex justify-content-center">
+                <mat-spinner color="primary"></mat-spinner>
+           </div>
+       </div>
+
+        <form class="pt-5" [formGroup]="loginForm" (ngSubmit)="loginSubmit(loginForm.value)" autocomplete="off">
+            <mat-card-content>
+                <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Usuario" formControlName="username">
+                </mat-form-field>
+
+                <mat-form-field class="example-full-width">
+                    <input matInput type="password" placeholder="Contraseña" formControlName="password">
+                </mat-form-field>
+            </mat-card-content>
+            <button mat-raised-button color="primary" class="btn-block" [disabled]="submitted || loginForm.invalid">Iniciar sesión</button>
+        </form>
+    </mat-card>
+
+</div>
