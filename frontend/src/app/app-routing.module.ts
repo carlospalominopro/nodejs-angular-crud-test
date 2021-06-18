@@ -9,7 +9,7 @@ import { NewsComponent } from './news/news.component';
 
 
 const appRoutes: Routes = [
-  { path: '*/*', redirectTo: '' },
+  { path: '*/*', redirectTo: 'login' },
   { path: 'login', component: LoginComponent },
   { path: 'users', component: UsersComponent, canActivate : [AuthGuard] },
   { path: 'news', component: NewsComponent, canActivate : [AuthGuard] },
