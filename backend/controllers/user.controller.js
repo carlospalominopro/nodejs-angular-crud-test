@@ -105,6 +105,9 @@ module.exports.update = async (req, res) => {
         if (data.password && data.password != '******') {
             data.password = encrypt.generateHashPassword(data.password)
         }
+        else{
+            delete data.password
+        }
 
         const user = await Models.User.findByPk(data.id);
 

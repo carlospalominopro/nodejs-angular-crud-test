@@ -1,1 +1,48 @@
-<p>news works!</p>
+<div class="container mt-2">
+
+    <div class="row pt-5 mt-5" *ngIf="loading">
+        <div class="col-12 d-flex justify-content-center">
+             <mat-spinner color="primary"></mat-spinner>
+        </div>
+    </div>
+
+    <div class="row" *ngIf="news.length > 0 && !loading">
+
+        <div class="col-6 pt-5" *ngFor="let article of news">
+            <mat-list>
+            
+                <mat-card class="example-card">
+                    <mat-card-header>
+                      <mat-card-title><a [href]="article.url" target="_blank">{{ article.title }}</a></mat-card-title>
+                      <mat-card-subtitle>{{ article.publishedAt | date : 'dd/MM/yyyy HH:mm' : 'LOCAL' }}</mat-card-subtitle>
+                      <mat-card-subtitle> {{ article.description }}</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image [src]="article.urlToImage" [alt]="article.title">
+                    <mat-card-content>
+                      <p>
+                        {{ article.content }}
+                      </p>
+                    </mat-card-content>
+                  </mat-card>
+                
+            </mat-list>
+        </div>
+    
+
+    </div>
+    
+    <div class="row" *ngIf="news.length == 0 && !loading">
+
+        <div class="col-6 pt-5 mt-5">
+            <mat-list>
+            
+                <h1>No se encontraron registros en API externa</h1>
+                
+            </mat-list>
+        </div>
+    
+
+    </div>
+
+
+</div>

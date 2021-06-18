@@ -1,10 +1,6 @@
 {
     "articles": [
         {
-            "source": {
-                "id": "engadget",
-                "name": "Engadget"
-            },
             "author": "https://www.engadget.com/about/editors/saqib-shah",
             "title": "Microsoft appoints CEO Satya Nadella as chairman",
             "description": "Microsoft CEO Satya Nadella has been appointed to the role of board chair..",
@@ -14,10 +10,6 @@
             "content": "Microsoft's board has named CEO Satya Nadella as chair, marking the first time a person has held both the positions since the company's co-founder Bill Gates stepped down as chief executive in 2000. … [+1315 chars]"
         },
         {
-            "source": {
-                "id": "engadget",
-                "name": "Engadget"
-            },
             "author": "https://www.engadget.com/about/editors/mat-smith",
             "title": "The Morning After: OnePlus is getting even closer with Oppo",
             "description": "Today’s headlines: Google's first retail store will sell, fix and show off its products, OnePlus is now officially part of Oppo, Leica introduces its very first smartphone..",
@@ -27,10 +19,6 @@
             "content": "OnePlus just launched a cheaper 5G phone, then slid in some major business news alongside it. After some time working with Oppo (which is owned by the same company BBK), OnePlus CEO Peter Lau announc… [+4302 chars]"
         },
         {
-            "source": {
-                "id": "wired",
-                "name": "Wired"
-            },
             "author": "Matt Jancer",
             "title": "18 Last-Minute Father's Day Gifts on Sale Now",
             "description": "Don't panic. You can still grab Dad a present with these deals on electronics, cooking gear, and more.",
@@ -40,10 +28,6 @@
             "content": "Roku Ultra 4K Streaming Box for $69 ($31 off): If Pop already has a 4K TV, but has been puttering around with an old streaming box not capable of streaming 4K shows, he's been wasting all his TV's po… [+2233 chars]"
         },
         {
-            "source": {
-                "id": "the-verge",
-                "name": "The Verge"
-            },
             "author": "Chaim Gartenberg",
             "title": "Apple cuts AppleCare Plus prices for M1 MacBook Air and Pro",
             "description": "Apple is lowering the cost of its extended AppleCare Plus warranties for its M1 MacBook Air and MacBook Pro models — but the Intel-based Pro isn’t getting a price cut for extended service.",
@@ -53,10 +37,6 @@
             "content": "Protect your laptop for less\r\nIf you buy something from a Verge link, Vox Media may earn a commission. See our ethics statement.\r\nPhoto by Vjeran Pavic / The Verge\r\nApple is cutting the prices for it… [+1202 chars]"
         },
         {
-            "source": {
-                "id": "the-verge",
-                "name": "The Verge"
-            },
             "author": "Cameron Faulkner",
             "title": "Amazon’s fourth-gen Echo and Anker battery packs are on sale ahead of Prime Day",
             "description": "Prime Day starts Monday, June 21st, but there are great deals right now, including Apple’s back-to-school promotion, Anker accessory deals, a big price cut on Microsoft’s Surface Duo folding phone, and more.",
@@ -66,10 +46,6 @@
             "content": "How to get free AirPods, discounted accessories, and more\r\nIf you buy something from a Verge link, Vox Media may earn a commission. See our ethics statement.\r\nPhoto by Vjeran Pavic / The Verge\r\nThis … [+3612 chars]"
         },
         {
-            "source": {
-                "id": "the-verge",
-                "name": "The Verge"
-            },
             "author": "Casey Newton",
             "title": "Is Facebook cornering the VR market?",
             "description": "If you look at the virtual reality landscape, Facebook has made a series of acquisitions that are roughly analogous to buying Fortnite, Roblox, and the best-selling game of 2020, Call of Duty: Black Ops Cold War.",
@@ -79,10 +55,6 @@
             "content": "Photo by Amelia Holowaty Krales / The Verge\r\n\n \n\n Imagine that, over the past year, Facebook had managed to acquire the battle royale game Fortnite, the kid-focused game creation engine Roblox, and t… [+8149 chars]"
         },
         {
-            "source": {
-                "id": "techcrunch",
-                "name": "TechCrunch"
-            },
             "author": "Annie Siebert",
             "title": "Apple AirTags UX teardown: The trade-off between privacy and user experience",
             "description": "Apple’s AirTags have been out for more than a month. Now that they've been out getting lost in the wild, we sent our resident UX analyst to do just that.",
@@ -92,10 +64,6 @@
             "content": "More posts by this contributor\r\nApples location devices called AirTags have been out for more than a month now. The initial impressions were good, but as we concluded back in April: It will be intere… [+1390 chars]"
         },
         {
-            "source": {
-                "id": "techcrunch",
-                "name": "TechCrunch"
-            },
             "author": "Sarah Perez",
             "title": "Amazon’s Appstore lowers its cut of developer revenue for small businesses, adds AWS credits",
             "description": "Amazon is following in the footsteps of app store giants, Apple and Google, with this week’s introduction of its Amazon Appstore Small Business Accelerator Program. The new program will reduce the commissions Amazon takes on app developer revenues for qualify…",
@@ -105,10 +73,6 @@
             "content": "Amazon is following in the footsteps of app store giants, Apple and Google, with this week’s introduction of its Amazon Appstore Small Business Accelerator Program. The new program will reduce the co… [+2801 chars]"
         },
         {
-            "source": {
-                "id": "techcrunch",
-                "name": "TechCrunch"
-            },
             "author": "Rebecca Bellan",
             "title": "Delivery service Gopuff acquires rideOS for $115 million",
             "description": "On-demand goods, food and alcohol delivery service Gopuff has acquired fleet management platform rideOS for $115 million, sources familiar with the deal say. This acquisition comes just a few months after the Philadelphia-based startup announced a $1.15 billi…",

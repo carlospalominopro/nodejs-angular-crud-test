@@ -12,6 +12,10 @@ Nota: Se debe tener instalado Angular 12.
 2. ng serve
 3. Acceder desde el navegador http://localhost:4200
 
+
+API EXTERNA (ROL USER): http://my-json-server.typicode.com/carlospalominopro/nodejs-angular-crud-test/articles 
+
+
 ## INSTALACION BASE DE DATOS
 
 Gestor BD: MySQL(8+)
