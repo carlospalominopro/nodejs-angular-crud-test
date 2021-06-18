@@ -27,7 +27,7 @@ router.post("/user/create", authMiddleware([Roles.Admin]), userController.create
 router.post("/user/update", authMiddleware([Roles.Admin]), userController.update);
 
 //ELIMINAR USUARIO
-router.post("/user/delete", authMiddleware([Roles.Admin]), userController.delete);
+router.post("/user/delete/:id", authMiddleware([Roles.Admin]), userController.delete);
 
 //CAMBIAR ESTADO USUARIO
 router.post("/user/changeStatus", authMiddleware([Roles.Admin]), userController.changeStatus);

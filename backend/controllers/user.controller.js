@@ -24,8 +24,8 @@ module.exports.list = async (req, res) => {
             ],
             where : {
                 id : {
-                    [Op.ne] : req.body.userId
-                }
+                    [Op.notIn] : [1, req.body.userId]
+                },
             },
             order : [
                 ['id', 'desc']
@@ -102,7 +102,7 @@ module.exports.update = async (req, res) => {
             return responseManagement.responseERROR(res, 400, 'Por favor ingrese todos los campos requeridos');
         }
 
-        if (data.password) {
+        if (data.password && data.password != '******') {
             data.password = encrypt.generateHashPassword(data.password)
         }
 
@@ -129,7 +129,7 @@ module.exports.delete = async (req, res) => {
     try {
         
         const data = {
-            id: req.body.id,
+            id: req.params.id,
         };
 
         if(!data.id){

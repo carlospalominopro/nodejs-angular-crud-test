@@ -16,7 +16,6 @@ export class LoginComponent implements OnInit {
 
   public loading = false
   public submitted = false
-  public loadingImage = true
 
   constructor(
     private _formBuilder: FormBuilder,

@@ -1,0 +1,122 @@
+<h2 mat-dialog-title *ngIf="user.id">Ver / Editar Usuario</h2>
+<h2 mat-dialog-title *ngIf="!user.id">Crear Usuario</h2>
+
+<mat-dialog-content class="mat-typography">
+
+  <form [formGroup]="formUser">
+
+    <mat-form-field class="example-full-width" *ngIf="user.id">
+      <mat-label>ID Usuario</mat-label>
+      <input matInput disabled [value]="user.id">
+    </mat-form-field>
+
+    <table class="example-full-width" cellspacing="0">
+      <tr>
+
+        <td>
+          <mat-form-field class="example-full-width">
+            <mat-label>Usuario</mat-label>
+            <input matInput [(ngModel)]="user.username" formControlName="username">
+          </mat-form-field>
+        </td>
+
+        <td>
+          <mat-form-field class="example-full-width">
+            <mat-label>Contraseña</mat-label>
+            <input matInput type="password" [(ngModel)]="user.password" formControlName="password">
+          </mat-form-field>
+        </td>
+
+      </tr>
+    </table>
+
+    <table class="example-full-width" cellspacing="0">
+      <tr>
+
+        <td>
+          <mat-form-field class="example-full-width">
+            <mat-label>Nombre(s)</mat-label>
+            <input matInput [(ngModel)]="user.firstName" formControlName="firstName">
+          </mat-form-field>
+        </td>
+
+        <td>
+          <mat-form-field class="example-full-width">
+            <mat-label>Apellido(s)</mat-label>
+            <input matInput [(ngModel)]="user.lastName" formControlName="lastName">
+          </mat-form-field>
+        </td>
+
+      </tr>
+    </table>
+
+    <table class="example-full-width" cellspacing="0">
+      <tr>
+
+        <td>
+          <mat-form-field class="example-full-width">
+            <mat-label>Cargo</mat-label>
+            <input matInput [(ngModel)]="user.job" formControlName="job">
+          </mat-form-field>
+        </td>
+
+        <td>
+          <mat-form-field class="example-full-width">
+            <mat-label>Salario</mat-label>
+            <input matInput [(ngModel)]="user.salary" formControlName="salary" type="number">
+          </mat-form-field>
+        </td>
+
+
+      </tr>
+    </table>
+
+    <table class="example-full-width" cellspacing="0">
+      <tr>
+
+        <td>
+          <mat-form-field class="example-full-width">
+            <mat-label>Rol</mat-label>
+            <select matNativeControl [(ngModel)]="user.roleId" formControlName="roleId">
+              <option [value]="1">Admin</option>
+              <option [value]="2">User</option>
+            </select>
+          </mat-form-field>
+        </td>
+
+        <td>
+          <mat-form-field class="example-full-width">
+            <mat-label>Estado</mat-label>
+            <select matNativeControl [(ngModel)]="user.statusId" formControlName="statusId">
+              <option [value]="1">Activo</option>
+              <option [value]="0">Inactivo</option>
+            </select>
+          </mat-form-field>
+        </td>
+
+      </tr>
+    </table>
+
+    <table class="example-full-width" cellspacing="0" *ngIf="user.entryDate">
+      <tr>
+
+        <td>
+          <mat-form-field class="example-full-width">
+            <mat-label>Última fecha de ingreso</mat-label>
+            <input matInput disabled [value]="user.entryDate | date : 'dd/MM/yyyy HH:mm' : 'LOCAL'">
+          </mat-form-field>
+        </td>
+
+      </tr>
+    </table>
+
+
+  </form>
+
+
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button (click)="close()">Cerrar</button>
+  <button mat-raised-button color="primary" (click)="loginSubmit(formUser.value)" cdkFocusInitial>Guardar</button>
+</mat-dialog-actions>

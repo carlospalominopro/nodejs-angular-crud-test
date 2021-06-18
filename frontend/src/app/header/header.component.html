@@ -1,6 +1,15 @@
 <mat-toolbar color="primary">
 
-    <span *ngIf="(currentUser | async)">{{ (currentUser | async)?.firstName + ' ' + (currentUser | async)?.lastName  }}</span>
+    <span *ngIf="(currentUser | async)">
+        
+        {{ (currentUser | async)?.firstName + ' ' + (currentUser | async)?.lastName }}
+
+        
+        <ng-container *ngIf="(currentUser | async)?.Role">
+            &nbsp; - &nbsp;{{ (currentUser | async)?.Role?.name }}
+        </ng-container>
+
+    </span>
     
     <span class="example-spacer"></span>
 

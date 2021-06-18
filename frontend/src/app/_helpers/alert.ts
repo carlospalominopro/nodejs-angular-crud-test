@@ -15,7 +15,7 @@ export class AlertHelper {
 
         this._snackBar.open(message, 'Cerrar', {
           horizontalPosition: 'right',
-          verticalPosition: 'top',
+          verticalPosition: 'bottom',
           duration: 5000,
         });
     
