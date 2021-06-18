@@ -23,7 +23,6 @@ Nota: Es requerido que exista la conexión local para el funcionamiento del proy
 - Puerto : 3306
 - Host : 127.0.0.1
 
-
 ## INSTALACION - BACKEND
 
 Node.JS
@@ -31,7 +30,7 @@ Node.JS
 Framework: Express.js
 ORM: Sequelize
 
-Nota: se debe tener instalado Node.js (14+)
+Nota: se debe tener instalado Node.js (14+), si no se desea crear las migraciones y saltar el proceso, la base de datos queda exportada en la carpeta "database" del backend.
 
 1. npm install
 2. npx sequelize-cli db:create (Crea base de datos configurada en backend)
