@@ -15,6 +15,12 @@ Nota: Se debe tener instalado Angular 12.
 
 API EXTERNA (ROL USER): http://my-json-server.typicode.com/carlospalominopro/nodejs-angular-crud-test/articles 
 
+RUTAS FRONTEND: 
+
+1. /login : Inicio de sesión
+2. /users : Administración de usuarios
+3. /news : Articulos (API EXTERNA)
+
 
 ## INSTALACION BASE DE DATOS
 
@@ -44,6 +50,15 @@ Nota: se debe tener instalado Node.js (14+), si no se desea crear las migracione
 6. Ruta api http://localhost:8081/api
 
 
+RUTAS BACKEND API: 
+
+1. /api/login : Iniciar sesión
+1. /api/user/list : Listar usuarios
+1. /api/user/create : Crear usuario
+1. /api/user/update : Actualizar usuario
+1. /api/user/delete/:id : Eliminar usuario
+1. /api/user/changeStatus : Cambiar estado usuario
+
 # Nota
 
 Al ejecutar los sembradores, la tabla "users" tendrá un usuario por defecto con las siguientes credenciales
@@ -51,7 +66,7 @@ Al ejecutar los sembradores, la tabla "users" tendrá un usuario por defecto con
 1. Usuario: admin
 2. Constraseña: 123123
 
-##BIBLOTECAS USADAS
+## BIBLOTECAS USADAS
 
 1. Angular Material
 2. Bootstrap
