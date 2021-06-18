@@ -40,7 +40,7 @@ Node.JS
 Framework: Express.js
 ORM: Sequelize
 
-Nota: se debe tener instalado Node.js (14+), si no se desea crear las migraciones y saltar el proceso, la base de datos queda exportada en la carpeta "database" del backend.
+Nota: se debe tener instalado Node.js (14+), ejecutar las migraciones no es necesario, pero si es necesario ejecutar sembradores para llenar la tabla de usuarios y roles.
 
 1. npm install
 2. npx sequelize-cli db:create (Crea base de datos configurada en backend)
