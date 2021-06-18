@@ -10,13 +10,13 @@ Nota: Se debe tener instalado Angular 12.
 
 1. npm install
 2. ng serve
-
-Acceder desde el navegador http://localhost:4200
+3. Acceder desde el navegador http://localhost:4200
 
 ## INSTALACION BASE DE DATOS
 
 Gestor BD: MySQL(8+)
-Nota: Es requerido que exista la conexión para el funcionamiento del proyecto.
+
+Nota: Es requerido que exista la conexión local para el funcionamiento del proyecto.
 
 - Usuario: root 
 - Contraseña: 12345
@@ -27,6 +27,7 @@ Nota: Es requerido que exista la conexión para el funcionamiento del proyecto.
 ## INSTALACION - BACKEND
 
 Node.JS
+
 Framework: Express.js
 ORM: Sequelize
 
@@ -35,6 +36,16 @@ Nota: se debe tener instalado Node.js (14+)
 1. npm install
 2. npx sequelize-cli db:create (Crea base de datos configurada en backend)
 3. npx sequelize-cli db:migrate (Migra tablas necesarias)
-4. npx sequelize-cli db:seed:all (Ejecuta sembrador para usuario inicial admin)
+4. npx sequelize-cli db:seed:all (Ejecuta sembrador para usuario inicial admin y roles)
 5. npm run dev (Inicializa proyecto backend)
+6. Ruta api http://localhost:8081/api
 
+
+# Nota
+
+Al ejecutar los sembradores, la tabla "users" tendrá un usuario por defecto con las siguientes credenciales
+
+1. Usuario: admin
+2. Constraseña: 123123
+
+### Hecho por: Carlos Palomino Ortiz @ 2021
