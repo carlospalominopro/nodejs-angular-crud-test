@@ -51,4 +51,12 @@ Al ejecutar los sembradores, la tabla "users" tendrá un usuario por defecto con
 1. Usuario: admin
 2. Constraseña: 123123
 
+##BIBLOTECAS USADAS
+
+1. Angular Material
+2. Bootstrap
+3. Express.js
+4. Sequelize ORM
+5. JWT
+
 ### Hecho por: Carlos Palomino Ortiz @ 2021
